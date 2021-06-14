@@ -127,8 +127,8 @@ const run = async () => {
       MAX_WAIT_TIMEOUT
     );
 
-    console.log(`Waiting for a 200 from: ${url}`);
-    await waitForUrl(url, MAX_READY_TIMEOUT);
+//     console.log(`Waiting for a 200 from: ${url}`);
+//     await waitForUrl(url, MAX_READY_TIMEOUT);
   } catch (error) {
     core.setFailed(typeof error === 'string' ? error : error.message);
   }
